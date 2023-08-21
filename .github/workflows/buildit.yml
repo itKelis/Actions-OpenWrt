@@ -136,7 +136,7 @@ jobs:
       if: always()
       with:
         name: OpenWRT-Package
-        files: ${{ env.FIRMWARE }}/*
+        path: ${{ env.FIRMWARE }}/*
 
     # - name: Upload firmware directory
     #   uses: actions/upload-artifact@main
